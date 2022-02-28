@@ -90,6 +90,7 @@ created by this JSON (slightly modified from the docs here https://quickchart.io
 ```
 
 ![Example 2](/assets/next_chart.png)
+```
 {
 	 "path": "./assets/next_chart.png",
 	 "width": "700",
@@ -128,5 +129,5 @@ created by this JSON (slightly modified from the docs here https://quickchart.io
       }
    }
 }
-
+```
 
