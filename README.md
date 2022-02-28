@@ -20,7 +20,7 @@ The server runs on http://127.0.0.1:5000/
 
 the endpoint to create a line chart is 
 
-`POST/line_chart`
+`POST /line_chart`
 
 The API accepts a POST request with the header
 "Content-Type": "application/json"
@@ -30,7 +30,8 @@ the width, and heights and data attributes in the JSON.
 
 ![Here is an example](/assets/first_chart.png)
 
-created by this JSON
+created by this JSON (slightly modified from the docs here https://quickchart.io/documentation/)
+
 ```
 {
 	 "path": "./assets/first_chart.png",
@@ -41,10 +42,10 @@ created by this JSON
          "January",
          "February",
          "March",
-				 "April",
-				 "May",
-				 "June",
-				 "July"
+         "April",
+         "May",
+         "June",
+         "July"
       ],
       "datasets":[
          {
@@ -87,5 +88,45 @@ created by this JSON
    }
 }
 ```
+
+![Example 2](/assets/next_chart.png)
+{
+	 "path": "./assets/next_chart.png",
+	 "width": "700",
+	 "height": "700",
+   "data":{
+      "labels":[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+      ],
+      "datasets":[
+         {
+            "label":"My First dataset",
+            "backgroundColor":"rgba(255, 99, 132, 0.5)",
+            "borderColor":"rgb(255, 99, 132)",
+            "data":[
+               0,
+               1,
+               2,
+               3,
+							 4,
+							 5
+            ],
+            "fill":true
+         }
+         
+      ]
+   },
+   "options":{
+      "title":{
+         "display":true,
+         "text":"Next Chart"
+      }
+   }
+}
 
 
